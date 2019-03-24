@@ -171,3 +171,62 @@ Bus 002 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub
 Bus 001 Device 002: ID 046d:c534 Logitech, Inc. Unifying Receiver
 Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
 ```
+
+
+### CPU /proc/cpuinfo
+
+```
+$ cat /proc/cpuinfo
+$ cat /proc/cpuinfo | grep vendor | uniq
+$ cat /proc/cpuinfo | grep 'model name' | uniq
+```
+
+### Memory Info
+
+```
+$ free -m
+```
+```
+total        used        free      shared  buff/cache   available
+Mem:          15722        2849       10381         435        2491       12112
+Swap:          2047           0        2047
+```
+
+### OS Info
+
+```
+$ cat /etc/*release
+```
+```
+DISTRIB_ID=LinuxMint
+DISTRIB_RELEASE=19.1
+DISTRIB_CODENAME=tessa
+DISTRIB_DESCRIPTION="Linux Mint 19.1 Tessa"
+NAME="Linux Mint"
+VERSION="19.1 (Tessa)"
+ID=linuxmint
+ID_LIKE=ubuntu
+PRETTY_NAME="Linux Mint 19.1"
+VERSION_ID="19.1"
+HOME_URL="https://www.linuxmint.com/"
+SUPPORT_URL="https://forums.ubuntu.com/"
+BUG_REPORT_URL="http://linuxmint-troubleshooting-guide.readthedocs.io/en/latest/"
+PRIVACY_POLICY_URL="https://www.linuxmint.com/"
+VERSION_CODENAME=tessa
+UBUNTU_CODENAME=bionic
+cat: /etc/upstream-release: Is a directory
+```
+
+
+
+
+### Kernel Info
+
+```
+$ uname -a
+$ lsb_release -a
+$ hostnamectl 
+```
+```
+Linux ime-desktop 4.15.0-46-generic #49-Ubuntu SMP Wed Feb 6 09:33:07 UTC 2019 x86_64 x86_64 x86_64 GNU/Linux
+```
