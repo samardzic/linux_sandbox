@@ -1,0 +1,8 @@
+site_name: Linux Documents
+
+docs:
+    - Home: index.md
+#     - About: mkdocs_setup.md
+
+theme:
+  name: 'material'
