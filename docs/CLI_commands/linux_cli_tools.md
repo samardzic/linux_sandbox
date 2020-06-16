@@ -1,6 +1,7 @@
 
 ## Linux CLI Tools
 
+<br/>
 
 ### Text editors
 
@@ -10,6 +11,8 @@ nano
 jed
 vim
 ``
+
+<br/>
 
 ### System Info
 ``
@@ -26,8 +29,10 @@ ntopng
 jnettop
 ``
 
+<br/>
+
 ### Network
-``
+```
 dstat
 vnstat
 netstat
@@ -55,10 +60,13 @@ iptstate
 nload
 slurm
 tcptrack
-``
+```
+
+<br/>
 
 ### Other
-``
+
+```
 bwm-ng
 cbm - Color Bandwidth Meter
 speedometer
@@ -97,12 +105,16 @@ lsusb
 lsblk
 mobaxterm (replaced PuTTY, Exceed, ReflectionX, mRemoteNG, Mstsc and WinSCP)
 Observium
-``
+```
 
 sudo apt-get install wavemon
 
+<br/>
+
 ### MyCli DB tool
+
 Once mycli installed, you can use it like this:
+
 ```
 $ mycli -u root -h localhost
 ```
@@ -115,7 +127,9 @@ $ mycli mysql://amjith@localhost:3306/django_poll
 ```
 
 For more usage options, type:
-``$ mycli --help``
+```
+$ mycli --help
+```
 
 
 ```
@@ -127,4 +141,27 @@ s-tui
 gtop: Awesome system monitoring dashboard
 ```
 
-``uptime``
+```
+uptime
+```
+
+<br/>
+
+### How do I know my computer has 32-bit or 64-bit UEFI firmware?
+
+On Linux run the following command.
+```
+cat /sys/firmware/efi/fw_platform_size
+64
+```
+
+<br/>
+
+
+### NeoFetch: Linux System Information
+
+![neofetch_image](../Images/neofetch.jpg)
+
+```
+neofetch
+```
