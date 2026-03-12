@@ -5,7 +5,7 @@
 :: ==================================================================================
 @echo off
 
-set SERVER_PORT=9000
+set SERVER_PORT=9006
 set IP_ADDRESS=127.0.0.1
 
 
@@ -21,6 +21,6 @@ echo.
 
 
 ECHO --- Appium server run ---
-call start cmd /k mkdocs serve -a %IP_ADDRESS%:%SERVER_PORT%
+call start cmd /k mkdocs serve --livereload -a %IP_ADDRESS%:%SERVER_PORT%
 echo.
 :: /************************************************************************************/

@@ -4,4 +4,4 @@
 
 echo -e "\n######################  MKdocs Start  #####################\n"
 cd /Users/ime/Build/linux_sandbox
-mkdocs serve -a 127.0.0.1:9010
+mkdocs serve --livereload -a 127.0.0.1:9006
